@@ -1,9 +1,14 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scenery/Pitch.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Ball/Ball.tscn" type="PackedScene" id=2]
 
 [node name="Level" type="Spatial"]
 
 [node name="Pitch" parent="." instance=ExtResource( 1 )]
 
 [node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0336463, 0.955521, 5.61809 )
+
+[node name="Ball" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.481637, 1.83893, -0.881631 )
